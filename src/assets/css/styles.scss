@@ -1,0 +1,55 @@
+html, body {
+    div[data-js="app"] {
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #ccc;
+            
+            h1 {
+                padding: 2em 0;
+            }
+
+            div {
+                display: flex;
+                flex-wrap: nowrap;
+                input {
+                    background: white;
+                    width: 100%;
+                    padding: 1em;
+                    border: none;
+                    border-radius: 0.3em 0 0 0,3em;
+                }
+
+                button {
+                    padding: 1em;
+                    border-radius: 0 0.3em 0.3em 0;
+                    border: none;
+                    cursor: pointer;
+                    font-weight: bold;
+                    &:hover {
+                        background-color: #f2f2f2;
+                    }
+                }
+            }
+
+            section {
+                max-width: 1200px;
+                padding: 1em 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                
+                &.comics {
+                    max-width: 250px;
+                    margin: 1% 0;
+                    h2 {
+                        padding: 1em 0 0.4em 0;
+                        text-align: center;
+                        line-height: 1.4
+                    }
+                }
+            }
+        }
+    }
+}
